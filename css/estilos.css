@@ -82,24 +82,27 @@ header,
 footer{
     font-family: var(--alternative-font);
     color: var(--light-font-solid);
+
 }
 ul,
 ol {
-    list-style-type: none;
-    
+    list-style-type: none;   
 
 }
 
 p {
     font-size: 1.8em;
+
 }
 
 img{
     width: 100%;
+
 }
 .container {
     max-width: 1200px;
     margin: 0 auto;
+
 }
 
 /*css para header*/
@@ -107,6 +110,7 @@ img{
 header {
     background-color: var(--dark-bg-solid);
     padding: var(--spacing-36);
+
 }
 
 .navbar {
@@ -117,6 +121,7 @@ header {
 }
 .navbar__logo{
     max-width: 300px;
+
 }
 .navbar__link{
     font-size: var(--font-medium);
@@ -124,6 +129,7 @@ header {
     display: inline-block;
     transition: background .3s ease-in-out;
     position: relative;
+
 }
 .navbar__link:hover{
     background-color: var(--primary-900);
@@ -133,14 +139,33 @@ header {
     display: flex;
     align-items: center;
     gap: var(--spacing-20);
+
 }
 .with-icon{
     display: flex;
     align-items: center;
     gap: var(--spacing-8);
+
 }
-.submenu{
+.with-submenu:hover .submenu {
+    display: block;
+
+}
+.submenu {
+    width: 300px;
+    display: none;
     position: absolute;
     background-color: var(--dark-bg-solid);
    
+}
+.submenu__link{
+    display: block;
+    padding: var(--spacing-8) var(--spacing-16);
+    font-size: var(--font-medium);
+    transition: background .3s ease-in-out;
+
+}
+.submenu__link:hover{
+    background-color: var(--primary-900);
+    
 }
