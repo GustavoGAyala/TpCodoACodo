@@ -1,0 +1,44 @@
+.item__licence {
+    font-size: var(--font-small);
+    font-weight: 500;
+}
+
+.item__name {
+    font-weight: 500;
+}
+
+.item__description {
+    font-family: var(--base-font);
+    font-size: var(--font-medium);
+    font-weight: 400;
+}
+
+.item__price {
+    font-size: var(--font-display);
+}
+
+.item__promo {
+    font-size: var(--font-xsmall);
+    font-family: var(--base-font) ;
+    font-weight:700;
+    color: var(--secondary-solid);
+}
+
+.item__promo a {
+    text-decoration: underline;
+}
+
+.item__submit {
+    width: 181px;
+    height: 37.91px;
+    background-color: var(--primary-solid);
+    color: var(--light-font-solid);
+    font-size: var(--font-medium);
+    font-family: var(--base-font);
+    font-weight: 400;
+}
+
+.item__input {
+    Width:105.47px;
+    Height:35.24px;
+}
