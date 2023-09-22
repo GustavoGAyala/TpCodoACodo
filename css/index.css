@@ -328,7 +328,7 @@ iconify-icon {
 
 
 .card-item__cover img {
-    animation: fade .7s;
+    animation: fade 1.5s;
 }
 
 .card-item__img--back {
