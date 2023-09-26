@@ -293,6 +293,11 @@ header {
     font-size: var(--font-display);
     text-transform: uppercase; /*para que el titulo sea en mayuscula*/
 }
+.slider__items {
+    display: flex;
+    gap: var(--spacing-24);
+
+}
 
 iconify-icon {
     color: var(--dark-bg-solid);
@@ -380,54 +385,6 @@ iconify-icon {
     margin-top: var(--spacing-36);
     text-align: center;
 
-}
-
-/*shop*/
-.main-shop{
-    display: flex;
-    flex-direction: row;
-    
-}
-.main-shop__container {
-    display: flex;
-    flex-direction: column;
-    padding: var(--spacing-8);   
-    align-items: stretch;
-}
-.main-shop__filter {
-    display:flex;
-    flex-direction: column;
-    align-items: start;
-    margin: 8px;
-    
-}
-.main-shop__title{
-    font-family: var(--base-font);
-    text-transform: uppercase;
-    font-size: var(--font-large);
-    font-weight: 500;
-}
-.main-shop__items{
-    display: flex;
-    flex-direction: row;
-    
-    padding: 2px;
-    
-}
-.main-shop__label{
-    margin: 4px;
-}
-.main-shop__precio{
-    justify-content: space-between;
-    display: flex;
-    align-items: center;
-}
-.main-shop__rango-title{
-    font-size: var(--font-xsmall);
-}
-.main-shop__rango-label{
-    width: 31px;
-    height: 27px;
 }
 
 /* ANIMATIONS */
