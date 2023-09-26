@@ -21,7 +21,6 @@
     --light-bg-solid:#FAFAFF;
     --light-font-solid:#FFFFFF;
 
-
     /*tipografias*/
 
     --base-font: 'Inter', sans-serif;
@@ -69,7 +68,7 @@ html {
     color: #111111;
 
 }
-
+/* estilos grales */
 a {
     text-decoration: none;
    
