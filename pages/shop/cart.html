@@ -58,7 +58,7 @@
         <div class="cart_detaile_title">CANTIDAD</div>
         <div class="cart_detaile_title">TOTAL</div>
     </div>
-    <!-- esto tendria que ir en js segun el pedido -->
+
     <div class="cart_detaile_container">
         <section class="item collection container">
             <picture class="item__img card-item__cover collection__cover">
@@ -72,39 +72,6 @@
             </article>
         </section>
 
-            <div class="item_in_cart_cant">
-                <div class="item__cart_cant">
-                    <div class="item__input quantity" id="quantity">1</div>
-                    <div class="add_sub_btn">
-                        <button id="add" class=" add item__quantity" type="button">+</button>
-                        <button id="subtract" class="remove item__quantity" type="button">-</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="totalprice-by-item">
-                <p class="totalprice-by-item-detaile">12355</p>
-                <button class="btn-delate">x</button>
-            </div>
-                
-        
-    </div>
-<!-- producto 2 -->
-
-
-<div class="cart_detaile_container">
-    <section class="item collection container">
-        <picture class="item__img card-item__cover collection__cover">
-            <img class=""src="/img/star-wars/baby-yoda-1.webp" alt="Figura coleccionable funko de grogu de la serie The Mandalorian">
-        </picture>
-
-        <article class="item__info item_in_cart_desc">  <!--figura item ------->
-            <h5 class="item_in_cart_info">BABY YODA BLUEBALL</h5>
-            <p class="item_in_cart_info">STAR WARS</p>
-            <p class="item_in_cart_info">$1799,99.-</p>
-        </article>
-    </section>
-
         <div class="item_in_cart_cant">
             <div class="item__cart_cant">
                 <div class="item__input quantity" id="quantity">1</div>
@@ -116,39 +83,41 @@
         </div>
 
         <div class="totalprice-by-item">
-            <p class="totalprice-by-item-detaile">12355</p>
-            <button class="btn-delate">x</button>
-        </div>
-            
-    
-</div>
-
-
-
-</section>
-
-<section class="detail-pay-container">
-    <h2 class="title-cart">RESUMEN</h2>
-    <div class="detail-pay">
-            <div>
-                <div class="">Cantidad de elementos  <p>3252</p>
-                </div>
-                <div class="">Subtotal <p>2325</p>
-                </div>
-                <div class="">Envio <p>23525</p>
-                </div>
-                <div class="">Total <p>23523</p>
+            <p class="totalprice-by-item-detaile">$1799,99</p>
+             <div class="btn-delate">
+                <button><img src="../../img/icons/delete_trash.svg" alt="trash icon"></button>
             </div>
         </div>
-        <button class="btn-pay-cart">IR A PAGAR</button>
     </div>
-    
 
-</section>
+    <section class="section_resumen">
+        <h2 class="resumen_title">RESUMEN</h2>
+        <div class="detaile_resumen">
+            <div class="resumen_item">
+                <h4 class="">Cantidad de elementos</h4>
+                <p class="valor">3</p>
+            </div>
+            <div class="resumen_item">
+                <h4 class="">Subtotal</h4>
+                <p class=" valor">$5.399,97</p>
+            </div>
+            <div class="resumen_item linea">
+                <h4 class="">Envío</h4>
+                <p class=" valor">$0,00</p>
+            </div>
+            <div class="resumen_item">
+                <h2 class="">Total</h2>
+                <p class="valor">$5.399,97</p>
+            </div>
+            
+            <button class="resumen_btn">
+            <!-- <button class="btn-pay-cart"> -->
+                IR A PAGAR</button>
+        </div>
+    </section>
   </main>
 
   <footer class="footer"> <!--inicio footer -->
-
     <nav class="navbar container">
         <ul>
             <li class="navbar__item">
@@ -166,11 +135,8 @@
         </ul>
           <picture>
             <img src="../../img/branding/isotype.svg" alt="isotipo de la marca funkoshop">
-
           </picture>
     </nav>
-    
-
     <p class="footer__copy">all rigths reserved 2023 - funkoshop &copy;</p>
   </footer> <!--fin footer -->
     <script src="/js/cart.js"></script>

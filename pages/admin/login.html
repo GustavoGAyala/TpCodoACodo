@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ingresar | funkoshop</title>
   <link rel="stylesheet" href="../../css/index.css">
-
+    <link rel="stylesheet" href="../../css/login.css">
 </head>
 <body>
   <header>    <!-- inicio header -->
@@ -46,11 +46,29 @@
         </ul>
     </nav>
   </header>   <!-- fin header -->
-  <main>
-    <div>login</div>
-  </main>
+  <main class="container login">
+    <section class="login_container">
+        <h1 class="login_title">Ingresar a mi cuenta</h1>
+        <div class="login_form">
+            <form>
+                <div class="login_form-group">
+                    <label class="login_form_userLabel" >Email:</label>
+                    <input class="login_form_userBox" type="text">
+                </div>
+                <div class="login_form-group">
+                    <label class="login_form_passLabel" >Contraseña:</label>
+                    <input class="login_form_passBox" type="password">
+                </div>
+                <button class="login_btnIngresar">Ingresar</button>
+                <input class="login_check" type="checkbox" >
+                <label class="login_checkTitle" >Recordarme</label>
+                <p class="login_olvideContrasena">Olvide mi contraseña</p>
+            </form>
+        </div>
+        </section>
+    </main>
 
-  <footer class="footer"> <!--inicio footer -->
+    <footer class="footer"> <!--inicio footer -->
 
     <nav class="navbar container">
         <ul>

@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Registro | funkoshop</title>
   <link rel="stylesheet" href="../../css/index.css">
+  <link rel="stylesheet" href="../../css/register.css">
 
 </head>
 <body>
@@ -46,9 +47,43 @@
         </ul>
     </nav>
   </header>   <!-- fin header -->
-  <main>
-    <div>register</div>
-  </main>
+
+    <main class="register-container">
+        <div class="register-container-form">
+            <h2 class="register-title">Crea tu cuenta</h2>
+            <form class="register-form">
+                <div class="register-form-item">
+                    <label for="nombre">Nombre:</label>
+                    <input class="input-register" type="text" name="nombre" placeholder="John" />
+                </div>
+                <div class="register-form-item">
+                    <label for="apellido">Apellido:</label>
+                    <input class="input-register" type="text" name="apellido" placeholder="Doe" />
+                </div>
+                <div class="register-form-item">
+                    <label for="email">Email:</label>
+                    <input class="input-register" type="password" name="email" placeholder="johndoe@correo.com" />
+                </div>
+                <div class="register-form-item">
+                    <label for="contrasena">Contraseña:</label>
+                    <input class="input-register" type="password" name="contrasena" value="123456789" />
+                </div>
+                <div class="register-form-item">
+                    <label for="repcontrasena">Repita Contraseña:</label>
+                    <input class="input-register" type="password" name="repcontrasena" value="123456789" />
+                </div>
+                <div class="register-form-controller">
+                    <input type="submit" value="Registrarme" class="register-submit">
+
+                    <span class="register-form-aceptar">
+                        <input type="checkbox" name="casilla">
+                        Acepto
+                        <a href="" class="register-terminos-condiciones">Términos y Condiciones</a>
+                    </span>
+                </div>
+            </form>
+        </div>
+    </main>
 
   <footer class="footer"> <!--inicio footer -->
 
