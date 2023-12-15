@@ -1,0 +1,63 @@
+
+.register-container-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 36px;
+  font-size: var(--font-small);
+}
+.register-title {
+  margin-top: var(--spacing-36) ;
+}
+.register-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.register-form-item {
+  width: 500px;
+  display: flex; 
+  align-items: center;
+  place-content: space-between;
+  padding: 10px;
+}
+.register-form-item:nth-child(5) label{
+  padding-right: 10px;
+}
+.input-register{
+  width: 250px;
+  color: var(--light-bg-solid);
+  border: 2px solid var(--primary-900);
+  border-radius: 3px;
+  text-indent: 5px;
+}
+/* boton registrarme y aceptar */
+.register-form-controller{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  padding: var(--spacing-8);
+
+}
+.register-submit {
+  width: 110px;
+  height: max-content;
+  background:var(--primary-solid);
+  color: var(--light-bg-solid);
+  padding: 4px;
+}
+.register-form-aceptar {
+  color: var(--dark-solido);
+}
+.register-submit{
+  width: 250px;
+  font-size: var(--font-xsmall);
+  border: none;
+
+}
+.register-terminos-condiciones{
+  color: var(--secundario-900);
+  font-size: 16px;
+}

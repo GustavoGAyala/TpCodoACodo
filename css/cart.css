@@ -1,0 +1,93 @@
+.cart_container{
+  padding: var(--spacing-20);
+}
+.title-cart{
+  font-size: var(--font-large);
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-color:var(--primary-solid);
+}
+.cart_detaile_container{
+    display: grid; 
+    grid-template-columns: repeat(3,1fr); /* 3 columnas */
+    align-items: center; /* alinea al centro */
+    padding: var(--spacing-8) 0;
+    margin-top:var(--spacing-8) ;
+    border: 1px solid var(--dark-300);
+}
+.cart_detaile_title{
+  text-align: center; /* centra cada texto */
+  font-weight: 600;
+}
+.item_in_cart_info{
+  font-size: var(--font-xsmall);
+}
+.item_in_cart_cant{
+  display:flex;
+  justify-content: center;
+}
+.item_in_cart_cant button:hover{
+  background-color: var(--primary-solid);
+}
+.totalprice-by-item{
+  display: flex;
+  justify-content: space-around;
+  padding-left: var(--spacing-68);
+}
+.btn-delate{
+  border: none;
+}
+.btn-delate:hover{
+  box-shadow: var(--primary-solid)0 0 10px;
+}
+.section_resumen{
+  margin-top: var(--spacing-20);
+  margin-bottom: var(--spacing-68);
+  font-size: var(--font-xsmall);
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.resumen_title{
+  font-size: var(--font-medium);
+  border-bottom: 5px solid var(--primary-solid);
+}
+.detaile_resumen{
+  width: 450px;
+  border: 1px solid var(--dark-300);
+  background-color: var(--light-bg-solid);
+  margin-top: var(--spacing-12);
+  margin-bottom: var(--spacing-12);
+  padding: var(--spacing-8);
+  border-radius: 5px;
+}
+.resumen_item{
+  display: flex;
+  justify-content: space-between;
+}
+.detaile_resumen h4{
+  width: max-content;
+}
+.detaile_resumen p{
+  color: var(--dark-bg-solid);
+}
+.valor{
+  text-align: right;
+}
+.linea{
+  border-bottom: 2px solid var(--primary-solid);
+}
+.resumen_btn{
+  width: 100%;
+  height: 50px;
+  border: none;
+  background-color: var(--primary-solid);
+  color: var(--light-font-solid);
+  font-size: var(--font-xsmall);
+  margin-top: var(--spacing-8);
+}
+.resumen_btn:focus{
+  background-color: var(--light-bg-solid);
+  color: var(--primary-solid);
+
+}

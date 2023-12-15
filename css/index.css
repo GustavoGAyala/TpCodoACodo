@@ -293,6 +293,11 @@ header {
     font-size: var(--font-display);
     text-transform: uppercase; /*para que el titulo sea en mayuscula*/
 }
+.slider__items {
+    display: flex;
+    gap: var(--spacing-24);
+
+}
 
 iconify-icon {
     color: var(--dark-bg-solid);
@@ -328,7 +333,7 @@ iconify-icon {
 
 
 .card-item__cover img {
-    animation: fade .7s;
+    animation: fade 1.5s;
 }
 
 .card-item__img--back {
@@ -381,7 +386,6 @@ iconify-icon {
     text-align: center;
 
 }
-
 
 /* ANIMATIONS */
 

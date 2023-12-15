@@ -14,7 +14,7 @@
         <nav class="navbar container">  <!-- barra de navegacion e icono de imagen principal de la pagina -->
             
             <picture class="navbar__logo">
-                <a href="./index.html">
+                <a href="/index.html">
                     <img src="/img/branding/logo_light_horizontal.svg" alt="Isologotipo de la marca funkoshop">
                </a>
             </picture>
@@ -22,7 +22,7 @@
             
             <ul class="navbar__menu">
                 <li class="navbar__item with-submenu">
-                    <a class="navbar__link with-icon" href="./pages/shop.html">SHOP <iconify-icon icon="ion:chevron-down"></iconify-icon></a> <!-- icono flecha hacia abajo -->
+                    <a class="navbar__link with-icon" href="../shop/shop.html">SHOP <iconify-icon icon="ion:chevron-down"></iconify-icon></a> <!-- icono flecha hacia abajo -->
                     <ul class="submenu">    <!-- inicio submenu --------------------->
                         <li class="submenu__item">
                              <a class="submenu__link" href="">Funkos</a>
@@ -36,13 +36,13 @@
                     </ul> <!----------fin submenu ----------------------------------->
                 </li>
                 <li class="navbar__item">
-                    <a class="navbar__link" href="./pages/contact.html">CONTACTO</a>
+                    <a class="navbar__link" href="../contacto.html">CONTACTO</a>
                 </li>
                 <li class="navbar__item">
-                    <a class="navbar__link" href="./pages/login.html">LOGIN</a>
+                    <a class="navbar__link" href="../admin/login.html">LOGIN</a>
                 </li>
                 <li class="navbar__item">
-                    <a class="navbar__cart" href="./pages/cart.html">
+                    <a class="navbar__cart" href="../shop/cart.html">
                         <img src="/img/icons/cart-icon.svg" alt="icono de carrito">
                     </a>
                 </li>
@@ -53,7 +53,9 @@
     <main class="container"> <!-- inicio main -->
          <section class="item collection container">
             <picture class="item__img card-item__cover collection__cover">
-                <img src="/img/star-wars/baby-yoda-1.webp" alt="Figura coleccionable funko de grogu de la serie The Mandalorian">
+                <img class="card-item__img--front"src="/img/star-wars/baby-yoda-1.webp" alt="Figura coleccionable funko de grogu de la serie The Mandalorian">
+                <img class="card-item__img--back" src="../../img/star-wars/baby-yoda-box.webp" alt="Figura coleccionable funko baby Yoda en caja">
+            
             </picture>
 
             <article class="item__info collection__content">  <!--figura item ------->
@@ -62,11 +64,15 @@
                 <p class="item__description">figura colecionable de baby Yoda (grogu) - The Mandalorian Saga, edicion limitada</p>
                 <p class="item__price">$1799,99.-</p>
                 <div class="item__cart">
-                    <button id="subtract" class="item__quantity" type="button">-</button>
+                    <div class="item__cart_cant">
                     <input class="item__input" type="text" name="quantity" id="quantity" placeholder="0">
-                    <button id="add" class="item__quantity" type="button">+</button>
-                    <button class="item__submit btn btn--primary btn--medium" type="submit">agregar al carrito</button>
-               </div>
+                        <div class="add_sub_btn">
+                            <button id="add" class="item__quantity" type="button">+</button>
+                            <button id="subtract" class="item__quantity" type="button">-</button>
+                        </div>
+                    </div>
+                    <button class="item__submit btn btn--primary btn--medium" type="submit">Agregar al Carrito</button>
+                </div>
                <p class="item__promo"><a href="">Ver metodos de pago</a> - 3 CUOTAS SIN INTERES</p>
             </article>
                 
@@ -143,16 +149,16 @@
             <nav class="navbar container">
                 <ul>
                     <li class="navbar__item">
-                        <a class="navbar__link" href="./pages/shop.html">SHOP</a>
+                        <a class="navbar__link" href="../shop/shop.html">SHOP</a>
                     </li>
                     <li class="navbar__item">
-                        <a class="navbar__link" href="./pages/register.html">REGISTRARSE</a>
+                        <a class="navbar__link" href="../admin/register.html">REGISTRARSE</a>
                     </li>
                     <li class="navbar__item">
-                        <a class="navbar__link" href="./pages/login.html">INGRESAR</a>
+                        <a class="navbar__link" href="../admin/login.html">INGRESAR</a>
                     </li>
                     <li class="navbar__item">
-                        <a class="navbar__link" href="./pages/contact.html">CONTACTO</a>
+                        <a class="navbar__link" href="../contacto.html">CONTACTO</a>
                     </li>
                 </ul>
                   <picture>

@@ -1,0 +1,68 @@
+.login{
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.login_title{
+   font-size: var(--font-jumbo);
+   margin: var(--spacing-8);
+}
+.login_form{
+   display: flex;
+   justify-content: center;
+   margin: var(--spacing-20);
+}
+.login_form-group{
+   margin-bottom: 15px;
+   display: flex;
+   align-items: center;
+   font-size: var(--font-medium);
+}
+.login_form-group label{
+   flex: 1;
+   text-align: left;
+}
+form{
+   width: 390px;
+}
+.login_form-group input{
+   width: 200px;
+   border: 2px solid var(--primary-900);
+   border-radius: 3px;
+   text-indent: 5px;
+}
+
+/*Formulario*/
+.login_btnIngresar
+{
+   background-color: var(--primary-solid);
+   width: 110px;
+   height: 30px;
+   color: var(--light-bg-solid);
+   border: none;
+   font-weight: var(--font-xlarge);
+   border-right: var(--spacing-20);
+}
+/*Recordar contraseña*/
+.login_check{
+   width: 60px;
+   border: 2px solid var(--dark-solid);
+}
+.login_checkTitle{
+   color: #1F1F1F;
+   font-size: var(--font-xsmall);
+}
+.login_olvideContrasena{
+   padding: var(--spacing-12);
+   color: #1D84B5;
+   font-size: var(--font-xsmall);
+}
+.login_subtitle{
+   font-family: var(--alternative-font);
+   font-size: var(--font-large);
+   margin: var(--spacing-28);
+}
+.login_checkTitle a{
+   color: var(--secondary-solid);
+}
