@@ -4,7 +4,9 @@
 @import url(login.css);
 @import url(register.css);
 @import url(shop.css);
-
+@import url(admin.css);
+@import url(create.css);
+@import url(edit.css);
 :root {
     /*palette*/
     --primary-solid: #ff3333;
