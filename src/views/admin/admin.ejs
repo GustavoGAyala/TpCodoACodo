@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Edit | funkoshop</title>
+  <title>admin</title>
   <link rel="stylesheet" href="../../css/index.css">
 
 </head>
@@ -44,13 +44,45 @@
                     </a>
                 </li>
             </ul>
-        </nav>    
-</header>   <!-- fin header -->
-  <main>
-    <div>edit</div>
-  </main>
+        </nav>
+     </header>   <!-- fin header -->
+    <main id="admin" class="container">
+        <section class="admin__search">
+            <iconify-icon class="admin__icon" icon="charm:search"></iconify-icon>
+            <input class="admin__search-bar" type="text" name="search" id="search" placeholder="código, nombre o categoria">
+        </section>
+        <section class="admin__list">
+            <div class="admin__header">
+                <h2>LISTADO DE PRODUCTOS</h2>
+                <span>AGREGAR<a href="/admin/create"><iconify-icon icon="bxs:plus-square" style="color: #f33;"></iconify-icon></a></span>
+            </div>
+            <div class="admin-table">
+                <header class="admin-table__header">
+                    <h3>ID</h3>
+                    <h3>Código</h3>
+                    <h3>Nombre del Producto</h3>
+                    <h3>Categoría</h3>
+                </header>
+                <% items.forEach(item => { %>
+                    <article class="admin-table__row">
+                        <p><%= item.product_id %></p>
+                        <p><%= item.sku %></p>
+                        <p><%= item.product_name %></p>
+                        <p><%= item.category_name %></p>
+                        <a href="/admin/edit/<%= item.product_id %>"><iconify-icon icon="mdi:pencil" style="color: #1d84b5;"></iconify-icon></a>
+                        <form action="/admin/delete/<%= item.product_id %>?_method=DELETE" method="POST">
+                            <button class="admin-table__btn-delete" type="submit">
+                                <iconify-icon icon="heroicons-solid:trash" style="color: #f33;"></iconify-icon>
+                            </button>
+                        </form>
+                    </article>
+                <% }); %>
+            </div>
+        </section>
 
-  <footer class="footer"> <!--inicio footer -->
+    </main>
+
+    <footer class="footer"> <!--inicio footer -->
 
     <nav class="navbar container">
         <ul>
@@ -76,6 +108,7 @@
 
     <p class="footer__copy">all rigths reserved 2023 - funkoshop &copy;</p>
   </footer> <!--fin footer -->
+
 
 
   
